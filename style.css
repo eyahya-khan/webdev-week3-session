@@ -1,0 +1,81 @@
+/* CSS below is to reset default values such as margin, padding and box-sizing and increase the resolution of the text (From Karins codealong) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* box sizing should now be supported in all browsers, so should work with only one value like above
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+}
+
+.image-header {
+  height: 50vh;
+  /* min-height: 50vh;  Why it can be good to use min height */
+  width: 100vw;
+
+  background-image: url('/assets/lollie.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.video-header {
+  height: 50vh;
+  width: 100vw;
+  border: 3px solid black;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.video-header video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  position: absolute;
+  color: white;
+  text-shadow: -2px -2px 3px black;
+}
+
+form {
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 3rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+form button {
+  width: 100px;
+  border-radius: 2rem;
+  border: none;
+  background-color: #ffc5c4;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
