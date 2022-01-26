@@ -3,10 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* box sizing should now be supported in all browsers, so should work with only one value like above
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  */
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -17,7 +15,6 @@ body {
 
 .image-header {
   height: 50vh;
-  /* min-height: 50vh;  Why it can be good to use min height */
   width: 100vw;
 
   background-image: url('/assets/lollie.jpg');
@@ -26,7 +23,6 @@ body {
   background-position: center;
 
   display: grid;
-  gap: 1rem;
   justify-items: center;
   align-items: center;
 }
@@ -36,7 +32,6 @@ body {
   width: 100vw;
   border: 3px solid black;
   position: relative;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
